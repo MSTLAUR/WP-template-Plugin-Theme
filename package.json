@@ -1,0 +1,22 @@
+{
+  "name": "WP boilerplate Tailwind Jquery ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "browser-sync start -p 'http://imagerie-st-laurent-tailw.local/' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "build": "tailwindcss -i ./src/input.css -o ./build/index.css --minify", 
+    "tailwindbuild": "tailwindcss -i ./src/input.css -o ./build/index.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "browser-sync": "^3.0.2",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
